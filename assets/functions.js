@@ -1,17 +1,6 @@
-function favoriteAnimal (animal){
-    return animal +" is my favorite animal";
+function checkAge (age){
+      return (age > 18 )?  true : confirm('Did your parents allow you');
 }
-
-let userName = 'John';
-
-function showMessage() {
-  let userName = "Bob"; // declare a local variable
-
-  let message = 'Hello, ' + userName; // Bob
-  alert(message);
+function checkAge(age){
+    return (age > 18) || confirm('Did your parents allow you?');
 }
-
-// the function will create and use its own userName
-showMessage();
-
-alert( userName ); // John, unchanged, the function did not access the outer variable
