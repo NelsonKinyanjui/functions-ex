@@ -2,17 +2,16 @@ function favoriteAnimal (animal){
     return animal +" is my favorite animal";
 }
 
-console.log(
-    favoriteAnimal('Zebra')
-);
+let userName = 'John';
 
-let userName = 'Bob';
+function showMessage() {
+  let userName = "Bob"; // declare a local variable
 
-function showMessage(){
-    userName = 'Nick';
-    alert("Hello, I am " + userName);
+  let message = 'Hello, ' + userName; // Bob
+  alert(message);
 }
- 
+
+// the function will create and use its own userName
 showMessage();
 
-alert(userName);
+alert( userName ); // John, unchanged, the function did not access the outer variable
